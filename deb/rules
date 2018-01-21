@@ -27,4 +27,8 @@ override_dh_auto_configure:
 	dh_auto_configure -- \
 		-DCMAKE_BUILD_TYPE=RELEASE \
 		-DCMAKE_INSTALL_PREFIX=/usr/stormgears \
+		-DWITH_IPP=OFF \
+		-DWITH_CUDA=OFF \
+		-DBUILD_TESTS=OFF \
+		-DBUILD_PERF_TESTS=OFF \
 		-DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules
