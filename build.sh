@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PKG=stormgears-opencv
-PKGVER=3.1.0.5
+PKGVER=3.1.0.7
 PKGREL=1
 GITURL=https://github.com/Itseez/opencv
 GITURL2=https://github.com/Itseez/opencv_contrib
@@ -41,6 +41,7 @@ rm -rf $WD/work/opencv_contrib/.git
 mv $WD/work/opencv $WD/work/${PKG}-${PKGVER}
 mv $WD/work/opencv_contrib $WD/work/${PKG}-${PKGVER}/
 cp -r $WD/deb $WD/work/${PKG}-${PKGVER}/debian
+cp -r $WD/profile.pkg $WD/work/${PKG}-${PKGVER}/stormgears-opencv.sh
 cd $WD
  
 cat > $WD/work/${PKG}-${PKGVER}/debian/changelog <<EOF
