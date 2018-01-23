@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PKG=stormgears-opencv
-PKGVER=3.1.0.4
+PKGVER=3.1.0.5
 PKGREL=1
 GITURL=https://github.com/Itseez/opencv
 GITURL2=https://github.com/Itseez/opencv_contrib
