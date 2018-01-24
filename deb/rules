@@ -35,5 +35,5 @@ override_dh_auto_configure:
 
 override_dh_auto_install:
 	mkdir -p debian/stormgears-opencv/etc/profile.d
-	cp profile.pkg debian/stormgears-opencv/etc/profile.d/
+	cp profile.pkg debian/stormgears-opencv/etc/profile.d/stormgears-opencv.sh
 	dh_auto_install
