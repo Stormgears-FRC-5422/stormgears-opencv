@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PKG=stormgears-opencv
-PKGVER=3.1.0.7
+PKGVER=3.1.0.8
 PKGREL=1
 GITURL=https://github.com/Itseez/opencv
 GITURL2=https://github.com/Itseez/opencv_contrib
@@ -45,7 +45,7 @@ if [ -e "$WD/work/${PKG}-${PKGVER}/debian/control.$ID" ]; then
   mv "$WD/work/${PKG}-${PKGVER}/debian/control.$ID" \
      "$WD/work/${PKG}-${PKGVER}/debian/control"
 fi
-cp -r $WD/profile.pkg $WD/work/${PKG}-${PKGVER}/stormgears-opencv.sh
+cp -r $WD/profile.pkg $WD/work/${PKG}-${PKGVER}/
 cd $WD
  
 cat > $WD/work/${PKG}-${PKGVER}/debian/changelog <<EOF
