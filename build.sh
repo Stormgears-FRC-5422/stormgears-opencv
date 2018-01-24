@@ -41,6 +41,10 @@ rm -rf $WD/work/opencv_contrib/.git
 mv $WD/work/opencv $WD/work/${PKG}-${PKGVER}
 mv $WD/work/opencv_contrib $WD/work/${PKG}-${PKGVER}/
 cp -r $WD/deb $WD/work/${PKG}-${PKGVER}/debian
+if [ -e "$WD/work/${PKG}-${PKGVER}/debian/control.$ID" ]; then
+  mv "$WD/work/${PKG}-${PKGVER}/debian/control.$ID" \
+     "$WD/work/${PKG}-${PKGVER}/debian/control"
+fi
 cp -r $WD/profile.pkg $WD/work/${PKG}-${PKGVER}/stormgears-opencv.sh
 cd $WD
  
