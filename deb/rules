@@ -31,7 +31,9 @@ override_dh_auto_configure:
 		-DWITH_CUDA=OFF \
 		-DBUILD_TESTS=OFF \
 		-DBUILD_PERF_TESTS=OFF \
-		-DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules
+		-DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules \
+		-DJAVA_AWT_INCLUDE_PATH:PATH=/usr/stormgears/jdk1.8.0_161/include \
+		-DJAVA_INCLUDE_PATH:PATH=/usr/stormgears/jdk1.8.0_161/include
 
 override_dh_auto_install:
 	mkdir -p debian/stormgears-opencv/etc/profile.d
